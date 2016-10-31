@@ -21,12 +21,12 @@ namespace RwMod.Console.Renderers
 
         public void Render(object target)
         {
-            var result = target as WorkGivers;
+            var result = target as WorkGiverDefs;
             if (result == null)
-                throw new ArgumentException($"The specified item is not of type {nameof(WorkGivers)}", nameof(target));
+                throw new ArgumentException($"The specified item is not of type {nameof(WorkGiverDefs)}", nameof(target));
 
             CONS.Clear();
-            CONS.WriteLine(nameof(WorkGivers));
+            CONS.WriteLine(nameof(WorkGiverDefs));
 
             foreach (var item in result.Items)
             {

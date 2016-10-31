@@ -6,8 +6,8 @@ namespace RwMod.Model
 {
     [Serializable]
     [XmlType(AnonymousType = true)]
-    [XmlRoot(Namespace = "", IsNullable = false)]
-    public class WorkGivers
+    [XmlRoot(ElementName = "WorkGivers", Namespace = "", IsNullable = false)]
+    public class WorkGiverDefs
     {
         [XmlElement(nameof(WorkGiverDef), Form = XmlSchemaForm.Unqualified)]
         public WorkGiverDef[] Items { get; set; }

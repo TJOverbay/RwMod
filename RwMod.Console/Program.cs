@@ -14,9 +14,13 @@ namespace RwMod.Console
             //IRenderer resultRenderer = WorkTypeDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkTypeDefs\WorkTypes.xml";
 
-            XmlTester<WorkGivers> tester = new XmlTester<WorkGivers>();
-            IRenderer resultRenderer = WorkGiverDefRenderer.Instance;
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkGiverDefs\WorkGivers.xml";
+            //XmlTester<WorkGiverDefs> tester = new XmlTester<WorkGiverDefs>();
+            //IRenderer resultRenderer = WorkGiverDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkGiverDefs\WorkGivers.xml";
+
+            XmlTester<WeatherDefs> tester = new XmlTester<WeatherDefs>();
+            IRenderer resultRenderer = WeatherDefRenderer.Instance;
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WeatherDefs\Weathers.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 
@@ -54,17 +58,6 @@ namespace RwMod.Console
             }
 
             return (result != null);
-        }
-    }
-
-    public static class StringExtensions
-    {
-        public static string ToStringOrDefault(this string value, string defaultValue = "[null]")
-        {
-            if (string.IsNullOrWhiteSpace(value))
-                return defaultValue;
-            else
-                return value;
         }
     }
 

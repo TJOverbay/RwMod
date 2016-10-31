@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\Rendering_Extensions.cs" />
     <Compile Include="Renderers\WorkGiverDefRenderer.cs" />
+    <Compile Include="Renderers\WeatherDefRenderer.cs" />
     <Compile Include="Renderers\WorkTypeDefRenderer.cs" />
   </ItemGroup>
   <ItemGroup>

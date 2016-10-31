@@ -28,6 +28,9 @@ namespace RwMod.Model.Tutor
         [XmlElement("priority", Form = XmlSchemaForm.Unqualified)]
         public float? Priority { get; set; }
 
+        // Workaround because some of the values in the tutor ConceptDef XML files 
+        // have <needsOpportunity>True</needsOpportunity> and only valid XML values 
+        // for booleans are 'true' (lower-case), 'false', '1', or '0'
         [XmlElement("needsOpportunity", Form = XmlSchemaForm.Unqualified)]
         public string NeedsOpportunityString { get; set; }
 

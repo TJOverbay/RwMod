@@ -9,7 +9,7 @@ namespace RwMod.Model
     [XmlRoot(Namespace = "", IsNullable = false)]
     public class WorkTypeDefs
     {
-        [XmlElement("WorkTypeDef", Form = XmlSchemaForm.Unqualified)]
+        [XmlElement(nameof(WorkTypeDef), Form = XmlSchemaForm.Unqualified)]
         public WorkTypeDef[] Items { get; set; }
     }
 
@@ -21,7 +21,7 @@ namespace RwMod.Model
         public string Name { get; set; }
 
         [XmlElement("labelShort", Form = XmlSchemaForm.Unqualified)]
-        public string ShortLabel { get; set; }
+        public string Label { get; set; }
 
         [XmlElement("pawnLabel", Form = XmlSchemaForm.Unqualified)]
         public string PawnLabel { get; set; }
@@ -36,13 +36,13 @@ namespace RwMod.Model
         public string Verb { get; set; }
 
         [XmlElement("naturalPriority", Form = XmlSchemaForm.Unqualified)]
-        public int Priority { get; set; }
+        public int? Priority { get; set; }
 
         [XmlElement("alwaysStartActive", Form = XmlSchemaForm.Unqualified)]
-        public bool AlwaysStartActive { get; set; }
+        public bool? AlwaysStartActive { get; set; }
 
         [XmlElement("requireCapableColonist", Form = XmlSchemaForm.Unqualified)]
-        public bool RequireCapableColonist { get; set; }
+        public bool? RequireCapableColonist { get; set; }
 
         [XmlArray("workTags", Form = XmlSchemaForm.Unqualified)]
         [XmlArrayItem("li", Form = XmlSchemaForm.Unqualified)]

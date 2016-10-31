@@ -39,7 +39,7 @@ namespace RwMod.Model
         public string GerundLabel { get; set; }
 
         [XmlElement("priorityInType", Form = XmlSchemaForm.Unqualified)]
-        public int? PriorityInType { get; set; }
+        public float? PriorityInType { get; set; }
 
         [XmlElement("prioritizeSustains", Form = XmlSchemaForm.Unqualified)]
         public bool? PrioritizeSustains { get; set; }

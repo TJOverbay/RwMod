@@ -1,5 +1,6 @@
 ﻿using RwMod.Console.Renderers;
 using RwMod.Model;
+using RwMod.Model.Tutor;
 using System.Xml;
 using System.Xml.Serialization;
 using CONS = System.Console;
@@ -18,9 +19,17 @@ namespace RwMod.Console
             //IRenderer resultRenderer = WorkGiverDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkGiverDefs\WorkGivers.xml";
 
-            XmlTester<WeatherDefs> tester = new XmlTester<WeatherDefs>();
-            IRenderer resultRenderer = WeatherDefRenderer.Instance;
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WeatherDefs\Weathers.xml";
+            //XmlTester<WeatherDefs> tester = new XmlTester<WeatherDefs>();
+            //IRenderer resultRenderer = WeatherDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WeatherDefs\Weathers.xml";
+
+            XmlTester<ConceptDefs> tester = new XmlTester<ConceptDefs>();
+            IRenderer resultRenderer = ConceptDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_Entry.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_NotedOpportunistic.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_NotedSelfshow.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_TriggeredModal.xml";
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Instructions.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

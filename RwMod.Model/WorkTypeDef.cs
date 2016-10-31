@@ -36,7 +36,7 @@ namespace RwMod.Model
         public string Verb { get; set; }
 
         [XmlElement("naturalPriority", Form = XmlSchemaForm.Unqualified)]
-        public int? Priority { get; set; }
+        public float? Priority { get; set; }
 
         [XmlElement("alwaysStartActive", Form = XmlSchemaForm.Unqualified)]
         public bool? AlwaysStartActive { get; set; }

@@ -26,10 +26,37 @@ namespace RwMod.Model.Tutor
         public string Label { get; set; }
 
         [XmlElement("priority", Form = XmlSchemaForm.Unqualified)]
-        public int? Priority { get; set; }
+        public float? Priority { get; set; }
 
         [XmlElement("needsOpportunity", Form = XmlSchemaForm.Unqualified)]
-        public bool? NeedsOpportunity { get; set; }
+        public string NeedsOpportunityString { get; set; }
+
+        [XmlIgnore]
+        public bool? NeedsOpportunity
+        {
+            get
+            {
+                if (NeedsOpportunityString != null)
+                {
+                    return string.Equals("true", NeedsOpportunityString, StringComparison.InvariantCultureIgnoreCase);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                if (value.HasValue)
+                {
+                    NeedsOpportunityString = value.Value.ToString();
+                }
+                else
+                {
+                    NeedsOpportunityString = null;
+                }
+            }
+        }
 
         [XmlElement("opportunityDecays", Form = XmlSchemaForm.Unqualified)]
         public bool? OpportunityDecays { get; set; }

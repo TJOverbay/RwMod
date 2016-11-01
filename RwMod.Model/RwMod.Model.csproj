@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurvePoints.cs" />
+    <Compile Include="IntRange.cs" />
     <Compile Include="FloatRange.cs" />
     <Compile Include="KeyedValue.cs" />
     <Compile Include="TraitDef.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="WorkGiverDef.cs" />
     <Compile Include="WeatherDef.cs" />
     <Compile Include="TrainableDef.cs" />
+    <Compile Include="TraderKindDef.cs" />
     <Compile Include="WorkTypeDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

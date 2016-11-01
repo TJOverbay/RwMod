@@ -24,6 +24,18 @@ namespace RwMod.Console.Renderers
             }
         }
 
+        public static string ToRenderString(this IntRange range)
+        {
+            if (range != null)
+            {
+                return $"{range.Min} - {range.Max}";
+            }
+            else
+            {
+                return "0 to 0";
+            }
+        }
+
         public static string ToRenderString(this KeyedValue kv)
         {
             if (kv != null)

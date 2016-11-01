@@ -47,6 +47,7 @@
     <Compile Include="Tutor\ConceptDef.cs" />
     <Compile Include="WorkGiverDef.cs" />
     <Compile Include="WeatherDef.cs" />
+    <Compile Include="TrainableDef.cs" />
     <Compile Include="WorkTypeDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

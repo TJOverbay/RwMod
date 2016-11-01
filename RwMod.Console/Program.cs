@@ -31,10 +31,14 @@ namespace RwMod.Console
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_TriggeredModal.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Instructions.xml";
 
-            XmlTester<TraitDefs> tester = new XmlTester<TraitDefs>();
-            IRenderer resultRenderer = TraitDefRenderer.Instance;
+            //XmlTester<TraitDefs> tester = new XmlTester<TraitDefs>();
+            //IRenderer resultRenderer = TraitDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Singular.xml";
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Spectrum.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Spectrum.xml";
+
+            XmlTester<TrainableDefs> tester = new XmlTester<TrainableDefs>();
+            IRenderer resultRenderer = TrainableDefRenderer.Instance;
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TrainableDefs\Trainables.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

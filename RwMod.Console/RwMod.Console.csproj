@@ -53,6 +53,7 @@
     <Compile Include="Renderers\TrainableDefRenderer.cs" />
     <Compile Include="Renderers\TraderKindRenderer.cs" />
     <Compile Include="Renderers\TradeDialogSorterDefRenderer.cs" />
+    <Compile Include="Renderers\TimeAssignmentDefRenderer.cs" />
     <Compile Include="Renderers\WorkTypeDefRenderer.cs" />
   </ItemGroup>
   <ItemGroup>

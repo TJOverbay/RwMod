@@ -48,9 +48,13 @@ namespace RwMod.Console
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Neolithic.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Outlander.xml";
 
-            XmlTester<TradeDialogSorterDefs> tester = new XmlTester<TradeDialogSorterDefs>();
-            IRenderer resultRenderer = TradeDialogSorterDefRenderer.Instance;
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TradeDialogSorterDefs\TradeDialogSorters.xml";
+            //XmlTester<TradeDialogSorterDefs> tester = new XmlTester<TradeDialogSorterDefs>();
+            //IRenderer resultRenderer = TradeDialogSorterDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TradeDialogSorterDefs\TradeDialogSorters.xml";
+
+            XmlTester<TimeAssignmentDefs> tester = new XmlTester<TimeAssignmentDefs>();
+            IRenderer resultRenderer = TimeAssignmentDefRenderer.Instance;
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TimeAssignmentDefs\TimeAssignments.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

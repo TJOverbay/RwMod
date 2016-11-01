@@ -18,7 +18,7 @@ namespace RwMod.Model
     public class WeatherDef
     {
         [XmlElement("defName", Form = XmlSchemaForm.Unqualified)]
-        public string Name { get; set; }
+        public string DefName { get; set; }
 
         [XmlElement("label", Form = XmlSchemaForm.Unqualified)]
         public string Label { get; set; }

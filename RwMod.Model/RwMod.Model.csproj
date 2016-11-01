@@ -52,6 +52,7 @@
     <Compile Include="TraderKindDef.cs" />
     <Compile Include="TradeDialogSorterDef.cs" />
     <Compile Include="TimeAssignmentDef.cs" />
+    <Compile Include="ThoughtDef.cs" />
     <Compile Include="WorkTypeDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -18,7 +18,7 @@ namespace RwMod.Model
     public class WorkTypeDef
     {
         [XmlElement("defName", Form = XmlSchemaForm.Unqualified)]
-        public string Name { get; set; }
+        public string DefName { get; set; }
 
         [XmlElement("labelShort", Form = XmlSchemaForm.Unqualified)]
         public string Label { get; set; }

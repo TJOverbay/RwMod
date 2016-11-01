@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(WorkGiverDef item)
         {
             CONS.WriteLine($"  {nameof(WorkGiverDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    label: {item.Label.ToStringOrDefault()}");
             CONS.WriteLine($"    giverClass: {item.GiverClass.ToStringOrDefault()}");
             CONS.WriteLine($"    workType: {item.WorkType.ToStringOrDefault()}");

@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(TrainableDef item)
         {
             CONS.WriteLine($"  {nameof(TrainableDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    label: {item.Label.ToStringOrDefault()}");
             CONS.WriteLine($"    description: {item.Description.ToStringOrDefault()}");
             CONS.WriteLine($"    icon: {item.Icon.ToStringOrDefault()}");

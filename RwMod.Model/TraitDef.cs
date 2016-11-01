@@ -18,7 +18,7 @@ namespace RwMod.Model
     public class TraitDef
     {
         [XmlElement("defName", Form = XmlSchemaForm.Unqualified)]
-        public string Name { get; set; }
+        public string DefName { get; set; }
         
         [XmlElement("commonality", Form = XmlSchemaForm.Unqualified)]
         public float Commonality { get; set; }

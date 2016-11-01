@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(TimeAssignmentDef item)
         {
             CONS.WriteLine($"  {nameof(TimeAssignmentDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    label: {item.Label.ToStringOrDefault()}");
             CONS.WriteLine($"    color: {item.Color.ToStringOrDefault()}");
             if (item.AllowRest.HasValue)

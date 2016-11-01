@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(WeatherDef item)
         {
             CONS.WriteLine($"  {nameof(WeatherDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    label: {item.Label.ToStringOrDefault()}");
             CONS.WriteLine($"    description: {item.Description.ToStringOrDefault()}");
             if (item.Repeatable.HasValue)

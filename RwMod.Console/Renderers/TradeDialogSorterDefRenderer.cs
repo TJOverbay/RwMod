@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(TradeDialogSorterDef item)
         {
             CONS.WriteLine($"  {nameof(TradeDialogSorterDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    label: {item.Label.ToStringOrDefault()}");
             CONS.WriteLine($"    comparerClass: {item.ComparerClass.ToStringOrDefault()}");
         }

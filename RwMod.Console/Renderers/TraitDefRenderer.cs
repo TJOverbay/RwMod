@@ -37,7 +37,7 @@ namespace RwMod.Console.Renderers
         private static void WriteItemToConsole(TraitDef item)
         {
             CONS.WriteLine($"  {nameof(TraitDef)}");
-            CONS.WriteLine($"    defName: {item.Name.ToStringOrDefault()}");
+            CONS.WriteLine($"    defName: {item.DefName.ToStringOrDefault()}");
             CONS.WriteLine($"    commonality: {item.Commonality}");
             if (item.CommonalityFemale.HasValue)
             {

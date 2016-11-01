@@ -49,6 +49,7 @@
     <Compile Include="Renderers\WorkGiverDefRenderer.cs" />
     <Compile Include="Renderers\WeatherDefRenderer.cs" />
     <Compile Include="Renderers\ConceptDefRenderer.cs" />
+    <Compile Include="Renderers\TraitDefRenderer.cs" />
     <Compile Include="Renderers\WorkTypeDefRenderer.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurvePoints.cs" />
     <Compile Include="FloatRange.cs" />
+    <Compile Include="KeyedValue.cs" />
+    <Compile Include="TraitDef.cs" />
     <Compile Include="Tutor\ConceptDef.cs" />
     <Compile Include="WorkGiverDef.cs" />
     <Compile Include="WeatherDef.cs" />

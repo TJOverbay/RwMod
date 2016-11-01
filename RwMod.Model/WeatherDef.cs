@@ -60,7 +60,7 @@ namespace RwMod.Model
         public SkyColors SkyColorsNightMid { get; set; }
 
         [XmlElement("commonalityRainfallFactor", Form = XmlSchemaForm.Unqualified)]
-        public RainfallFactors CommonalityRainfallFactor { get; set; }
+        public CurvePoints CommonalityRainfallFactor { get; set; }
 
         [XmlElement("temperatureRange", Form = XmlSchemaForm.Unqualified)]
         public FloatRange TemperatureRange { get; set; }
@@ -89,15 +89,6 @@ namespace RwMod.Model
         public int? AverageInterval { get; set; }
         [XmlElement("eventClass", Form = XmlSchemaForm.Unqualified)]
         public string EventClass { get; set; }
-    }
-
-    [Serializable]
-    [XmlType(AnonymousType = true)]
-    public class RainfallFactors
-    {
-        [XmlArray("points", Form = XmlSchemaForm.Unqualified)]
-        [XmlArrayItem("li", Form = XmlSchemaForm.Unqualified)]
-        public string[] Points { get; set; }
     }
 
     [Serializable]

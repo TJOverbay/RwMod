@@ -131,7 +131,7 @@ namespace RwMod.Console.Renderers
             }
         }
 
-        private static void RenderRainFallFactors(RainfallFactors factors)
+        private static void RenderRainFallFactors(CurvePoints factors)
         {
             if ((factors?.Points.Any()).GetValueOrDefault())
             {

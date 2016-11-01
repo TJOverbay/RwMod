@@ -23,13 +23,18 @@ namespace RwMod.Console
             //IRenderer resultRenderer = WeatherDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WeatherDefs\Weathers.xml";
 
-            XmlTester<ConceptDefs> tester = new XmlTester<ConceptDefs>();
-            IRenderer resultRenderer = ConceptDefRenderer.Instance;
+            //XmlTester<ConceptDefs> tester = new XmlTester<ConceptDefs>();
+            //IRenderer resultRenderer = ConceptDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_Entry.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_NotedOpportunistic.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_NotedSelfshow.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_TriggeredModal.xml";
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Instructions.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Instructions.xml";
+
+            XmlTester<TraitDefs> tester = new XmlTester<TraitDefs>();
+            IRenderer resultRenderer = TraitDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Singular.xml";
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Spectrum.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

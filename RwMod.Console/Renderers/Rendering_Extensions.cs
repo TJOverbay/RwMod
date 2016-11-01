@@ -23,5 +23,17 @@ namespace RwMod.Console.Renderers
                 return "0 to 0";
             }
         }
+
+        public static string ToRenderString(this KeyedValue kv)
+        {
+            if (kv != null)
+            {
+                return $"{kv.Key.ToStringOrDefault()} :: {kv.Value}";
+            }
+            else
+            {
+                return "[null]";
+            }
+        }
     }
 }

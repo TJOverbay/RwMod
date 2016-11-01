@@ -50,6 +50,7 @@
     <Compile Include="WeatherDef.cs" />
     <Compile Include="TrainableDef.cs" />
     <Compile Include="TraderKindDef.cs" />
+    <Compile Include="TradeDialogSorterDef.cs" />
     <Compile Include="WorkTypeDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

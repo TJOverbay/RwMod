@@ -40,13 +40,17 @@ namespace RwMod.Console
             //IRenderer resultRenderer = TrainableDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TrainableDefs\Trainables.xml";
 
-            XmlTester<TraderKindDefs> tester = new XmlTester<TraderKindDefs>();
-            IRenderer resultRenderer = TraderKindDefRenderer.Instance;
+            //XmlTester<TraderKindDefs> tester = new XmlTester<TraderKindDefs>();
+            //IRenderer resultRenderer = TraderKindDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Caravan_Neolithic.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Caravan_Outlander.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Orbital_Misc.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Neolithic.xml";
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Outlander.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Outlander.xml";
+
+            XmlTester<TradeDialogSorterDefs> tester = new XmlTester<TradeDialogSorterDefs>();
+            IRenderer resultRenderer = TradeDialogSorterDefRenderer.Instance;
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TradeDialogSorterDefs\TradeDialogSorters.xml";
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

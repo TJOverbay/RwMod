@@ -55,6 +55,7 @@
     <Compile Include="Renderers\TradeDialogSorterDefRenderer.cs" />
     <Compile Include="Renderers\TimeAssignmentDefRenderer.cs" />
     <Compile Include="Renderers\ThoughtDefRenderer.cs" />
+    <Compile Include="Renderers\ThinkTreeDefRenderer.cs" />
     <Compile Include="Renderers\WorkTypeDefRenderer.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -16,18 +16,25 @@ namespace RwMod.Console
         {
             string rootElement = null;
 
+            //----------------------------WorkTypeDefs-------------------------------------
             //XmlTester<WorkTypeDefs> tester = new XmlTester<WorkTypeDefs>();
             //IRenderer resultRenderer = WorkTypeDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkTypeDefs\WorkTypes.xml";
+            //-----------------------------------------------------------------
 
+            //----------------------------WorkGiverDefs-------------------------------------
             //XmlTester<WorkGiverDefs> tester = new XmlTester<WorkGiverDefs>();
             //IRenderer resultRenderer = WorkGiverDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WorkGiverDefs\WorkGivers.xml";
+            //-----------------------------------------------------------------
 
+            //----------------------------WeatherDefs-------------------------------------
             //XmlTester<WeatherDefs> tester = new XmlTester<WeatherDefs>();
             //IRenderer resultRenderer = WeatherDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\WeatherDefs\Weathers.xml";
+            //-----------------------------------------------------------------
 
+            //----------------------------Tutor\ConceptDefs-------------------------------------
             //XmlTester<ConceptDefs> tester = new XmlTester<ConceptDefs>();
             //IRenderer resultRenderer = ConceptDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_Entry.xml";
@@ -35,16 +42,22 @@ namespace RwMod.Console
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_NotedSelfshow.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Concepts_TriggeredModal.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\Tutor\Instructions.xml";
+            //-----------------------------------------------------------------
 
+            //----------------------------TraitDefs-------------------------------------
             //XmlTester<TraitDefs> tester = new XmlTester<TraitDefs>();
             //IRenderer resultRenderer = TraitDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Singular.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraitDefs\Traits_Spectrum.xml";
+            //-----------------------------------------------------------------
 
+            //---------------------------TrainableDefs--------------------------------------
             //XmlTester<TrainableDefs> tester = new XmlTester<TrainableDefs>();
             //IRenderer resultRenderer = TrainableDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TrainableDefs\Trainables.xml";
+            //-----------------------------------------------------------------
 
+            //----------------------------TraderKindDefs-------------------------------------
             //XmlTester<TraderKindDefs> tester = new XmlTester<TraderKindDefs>();
             //IRenderer resultRenderer = TraderKindDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Caravan_Neolithic.xml";
@@ -52,16 +65,22 @@ namespace RwMod.Console
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Orbital_Misc.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Neolithic.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TraderKindDefs\TraderKinds_Visitor_Outlander.xml";
+            //-----------------------------------------------------------------
 
+            //---------------------------TradeDialogSorterDefs--------------------------------------
             //XmlTester<TradeDialogSorterDefs> tester = new XmlTester<TradeDialogSorterDefs>();
             //IRenderer resultRenderer = TradeDialogSorterDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TradeDialogSorterDefs\TradeDialogSorters.xml";
+            //-----------------------------------------------------------------
 
+            //---------------------------TimAssignmentDefs--------------------------------------
             //XmlTester<TimeAssignmentDefs> tester = new XmlTester<TimeAssignmentDefs>();
             //IRenderer resultRenderer = TimeAssignmentDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\TimeAssignmentDefs\TimeAssignments.xml";
+            //-----------------------------------------------------------------
 
-            IRenderer resultRenderer = ThoughtDefRenderer.Instance;
+            //---------------------------ThoughtDefs--------------------------------------
+            //IRenderer resultRenderer = ThoughtDefRenderer.Instance;
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Exotic.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Memory_Debug.xml";
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Memory_Eating.xml";
@@ -82,10 +101,22 @@ namespace RwMod.Console
             //rootElement = "Thoughts";     // Uncomment this line for the following XML files
             //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Situation_General.xml";
 
-            rootElement = "GameData";     // Uncomment this line for the following XML files
-            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Situation_MentalState.xml";
+            //rootElement = "GameData";     // Uncomment this line for the following XML files
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThoughtDefs\Thoughts_Situation_MentalState.xml";
 
-            XmlTester<ThoughtDefs> tester = new XmlTester<ThoughtDefs>(rootElement);
+            //XmlTester<ThoughtDefs> tester = new XmlTester<ThoughtDefs>(rootElement);
+            //------------------------------------------------------------------
+
+            //---------------------------ThinkTreeDefs--------------------------------------
+            XmlTester<ThinkTreeDefs> tester = new XmlTester<ThinkTreeDefs>();
+            IRenderer resultRenderer = ThinkTreeDefRenderer.Instance;
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThinkTreeDefs\Animal.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThinkTreeDefs\Humanlike.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThinkTreeDefs\Mechanoid.xml";
+            //string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThinkTreeDefs\SubTrees_Duty.xml";
+            string pathToXmlFile = @"D:\Users\Tim\SteamLibrary\steamapps\common\RimWorld\Mods\Core\Defs\ThinkTreeDefs\SubTrees_Misc.xml";
+            //-----------------------------------------------------------------
+
 
             tester.TestXmlFile(pathToXmlFile, resultRenderer);
 

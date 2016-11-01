@@ -53,10 +53,13 @@
     <Compile Include="TradeDialogSorterDef.cs" />
     <Compile Include="TimeAssignmentDef.cs" />
     <Compile Include="ThoughtDef.cs" />
+    <Compile Include="ThinkTreeDef.cs" />
     <Compile Include="WorkTypeDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="XML\Animal.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
